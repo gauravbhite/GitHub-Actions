@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on:  macos-latest
 
     strategy:
       matrix:
-        python-version: [3.8, 3.9]
+        python-version: [3.13]
 
     steps:
     - uses: actions/checkout@v3
